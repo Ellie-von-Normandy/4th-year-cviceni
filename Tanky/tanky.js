@@ -24,16 +24,7 @@ let battlefield2 = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 ];
 
-let ammo = 30;
-
-Tank1();
-Tank2();
-Tank3();
-Tank4();
-Tank5();
-
-updateAmmo();
-renderGrid();
+restart()
 
 function renderGrid () {
     const container = document.getElementById("battlefield-container");
