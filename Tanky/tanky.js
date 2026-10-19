@@ -32,7 +32,7 @@ Tank3();
 Tank4();
 Tank5();
 
-updateAmmoDisplay();
+updateAmmo();
 renderGrid();
 
 function renderGrid () {
@@ -256,7 +256,7 @@ function updateAmmo() {
     }
 }
 
-function restartGame() {
+function restart() {
     ammo = 30;
 
     battlefield = [
