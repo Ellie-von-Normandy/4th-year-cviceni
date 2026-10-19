@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="tanky.js" defer></script>
+</head>
+<body>
+
+<div id="battlefield-container"></div>
+<div id="ammo-counter">Ammo: 30</div>
+<button id="restart-btn" onclick="restartGame()">Restart</button>
+
+</body>
+</html>
+
+<style>
+
+    body {
+        background-color: black;
+    }
+
+    * {
+        color: mediumorchid;
+        font-size: xx-large;
+    }
+
+    #battlefield-container {
+        display: grid;
+        grid-template-columns: repeat(10, 50px);
+        text-align: center;
+        justify-content: center;
+    }
+
+    #battlefield-container button {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        font-family: monospace;
+        border: 1px solid mediumorchid;
+        background-color: transparent;
+        cursor: crosshair;
+    }
+
+    #battlefield-container button:hover {
+        background-color: cyan;
+        transition-duration: 0.5s;
+    }
+
+    #ammo-counter {
+        color: mediumorchid;
+        font-family: monospace;
+        font-size: x-large;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #restart-btn {
+        display: block;
+        margin: 20px auto 0 auto;
+        background-color: transparent;
+        color: mediumorchid;
+        border: 1px solid mediumorchid;
+        padding: 10px 20px;
+        font-family: monospace;
+        font-size: large;
+        cursor: pointer;
+    }
+
+    #restart-btn:hover {
+        background-color: mediumorchid;
+        color: black;
+        transition: 0.5s;
+    }
+
+</style>
