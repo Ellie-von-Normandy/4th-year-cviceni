@@ -8,14 +8,14 @@ function renderGrid () {
         for (let b = 0; b < 10; b++) {
             let cell = document.createElement("button");
             cell.textContent = battlefield2[a][b];
-
             cell.onclick = function() {
                 shoot(a, b);
             }
-
             container.appendChild(cell);
         }
     }
+
+    checkWin();
 }
 
 function shoot(a, b) {
@@ -218,6 +218,7 @@ function updateAmmo() {
         ammoCounter.textContent = "Ammo Left: " + ammo;
     } else {
         alert("Game over TwT")
+        window.location.reload();
     }
 }
 
@@ -259,4 +260,20 @@ function restart() {
 
     updateAmmo();
     renderGrid();
+}
+
+function checkWin() {
+    let count = 0;
+
+    for(let x = 0; x < 10; x++) {
+        for (let y = 0; y < 10; y++) {
+            if (battlefield2[x][y] === "X") {
+                count++;
+            }
+        }
+    }
+    if (count >= 15) {
+        alert("You win!!");
+        window.location.reload();
+    }
 }
