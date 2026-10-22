@@ -45,7 +45,6 @@ function Tank1 () {
     if (battlefield[RandomRow][RandomColumn] === 0) {
         battlefield[RandomRow][RandomColumn] = 1;
     }
-    renderGrid();
 }
 
 function Tank2 () {
@@ -79,7 +78,6 @@ function Tank2 () {
             }
         }
     }
-    renderGrid();
 }
 
 function Tank3 () {
@@ -117,7 +115,6 @@ function Tank3 () {
             }
         }
     }
-    renderGrid();
 }
 
 function Tank4 () {
@@ -159,7 +156,6 @@ function Tank4 () {
             }
         }
     }
-    renderGrid();
 }
 
 function Tank5 () {
@@ -205,7 +201,6 @@ function Tank5 () {
             }
         }
     }
-    renderGrid();
 }
 
 function updateAmmo() {
